@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/image/resize/" method="POST">
+        <service class="Mls\CatalogImageApi\Api\ImageInterface" method="resizeImage"/>
+        <resources>
+            <resource ref="self"/>
+        </resources>
+    </route>
+</routes>
